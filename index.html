@@ -3,21 +3,14 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Voiceflow Widget</title>
+        <title>AI Mentor Chat</title>
         <style>
             html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
-            #vf-widget { width: 100%; height: 100%; }
+            #vf-chat { width: 100%; height: 100%; }
         </style>
     </head>
     <body>
-        <div id="vf-widget"></div>
-        <script src="https://cdn.voiceflow.com/widget/bundle.mjs"></script>
-        <script>
-            VoiceflowWidget.init({
-                versionID: "687a116615a3d2e835b2dc53",
-                el: document.getElementById("vf-widget")
-            });
-        </script>
+        <div id="vf-chat"></div>
         <script type="text/javascript">
             (function(d, t) {
                 var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
@@ -31,7 +24,7 @@
                         },
                         render: {
                             mode: 'embedded',
-                            target: document.getElementById(...)
+                            target: document.getElementById('vf-chat')
                         }
                     });
                 }
